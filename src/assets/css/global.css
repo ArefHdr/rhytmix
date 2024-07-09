@@ -1,0 +1,74 @@
+:root {
+    /*background*/
+    --main-bg-color: #0c1322;
+    --second-bg-color: #0f1827;
+    --transparent-bg-color: transparent;
+
+    /*text color*/
+    --main-color: #fdffff;
+    --second-color: #9aa4a5;
+    --active-color: #52d0e6;
+
+    /*border*/
+    --main-active-border: 1px solid var(--active-color);
+
+    /*border radius*/
+    --btn-border-radious: 16px;
+    --img-border-radious: 50%;
+
+    /*font size*/
+    --main-font-size: 18px;
+    --small-font-size: 15px;
+    --title-font-size: 24px;
+
+    /*transition*/
+    --main-transition: 0.3s;
+
+    /*padding*/
+    --base-padding: 1rem;
+
+    /*font family*/
+    --font-family: 'Arial', sans-serif;
+
+    /*margin*/
+    --base-margin: 1rem;
+    /*gap*/
+    --base-gap: 1rem;
+
+    /*covers size*/
+    --covers-width: 65px;
+    --covers-height: 65px;
+}
+
+img {
+    max-width: 100%; /* Ensure the image does not exceed the width of its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+}
+
+.row {
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    background: none;
+    border: none;
+    outline: none;
+}
+::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+
+/* Optionally, reset other scrollbar styles */
+::-webkit-scrollbar-track {
+    background-color: initial; /* Reset background color */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: initial; /* Reset thumb color */
+}
