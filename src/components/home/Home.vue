@@ -32,7 +32,7 @@ import {songInfo} from "@/js/player.js";
 
 .player__container {
   background: var(--main-bg-color);
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;

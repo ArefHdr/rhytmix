@@ -1,4 +1,5 @@
 import {ref} from "vue";
+import Swal from "sweetalert2";
 
 const songInfo = ref({})
 const audio = ref(null)
@@ -86,9 +87,25 @@ const repeatHandler = () => {
 const addToFavorites = () => {
     if (!favorites.value.includes(songInfo.value)) {
         favorites.value.unshift(songInfo.value);
+        Swal.fire({
+            toast:true,
+            position: "top",
+            icon: "success",
+            title: "Added To Favorites",
+            showConfirmButton: false,
+            timer: 1500
+        });
     }
     else {
         favorites.value.splice(favorites.value.indexOf(songInfo.value), 1);
+        Swal.fire({
+            toast:true,
+            position: "top",
+            icon: "info",
+            title: "Removed from Favorites",
+            showConfirmButton: false,
+            timer: 1500
+        });
     }
 }
 const formatTime = (currentTimeInSeconds) => {
