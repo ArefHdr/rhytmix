@@ -1,4 +1,6 @@
-# rhythmix-player
+# rhythmix-player is a music player by vuejs
+
+# use a large screen to show better
 
 ## Project setup
 ```
